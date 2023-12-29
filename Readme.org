@@ -1,0 +1,95 @@
+* Advent of Code Swift Starter Template
+
+Daily programming puzzles at [Advent of Code](<https://adventofcode.com/>), by
+[Eric Wastl](<http://was.tl/>).
+
+** Starter Template
+This is a template to create the initial project. Some things will need to be changed
+
+- In the =Package.swift= file, replace =aoc-00= with the correct year.
+- Rename the folder =Sources/aoc-00= to the correct year
+- In the =fetch_current_inputs.sh= file, replace the year 2000 with the correct year.
+- Replace references to =aoc-00= in the instruction examples of the =Readme.org= file.
+- Correct the Header in this =Readme.org= file.
+- Correct the copyright year in the =LICENCE= file
+
+** Project Structure
+
+This is a Swift Package based off the starter project [provided by Apple](https://github.com/apple/swift-aoc-starter-example/tree/main)
+
+This is split into Three main parts
+- aoc-00 the executable file which routes the command line to the solutions library
+- Challenges, a swift library that implements the solutions to the puzzles
+- Advent-Utilities, common code used to set up the project, and helpers to be used across years.
+
+** Inputs
+I'm not including my inputs.
+
+The code requires each input to be of the form =day<xx>.txt= so add the requisite ones before trying to evaluate any solution.
+
+I use [[https://github.com/wimglenn/advent-of-code-data][aocd]] to fetch and cache the inputs for my registered user id.
+
+To fetch all inputs run =./fetch_inputs.sh= from the project root. If they have been cached, this shouldn't take too long.
+For getting individual day's inputs while participating, =cd= into the input directory for that year and run =aocd > dayxx.txt= or =aocd yyyy dd |> dayxx.txt= in the inputs directory
+
+** Problems
+The problems assume three files (replace 00 with the day of the problem).
+
+- `Sources/Challenges/Inputs/Day00.txt`: the input data provided for the challenge
+- `Sources/Challenges/Day00.swift`: the code to solve the challenge
+- `Tests/ChallengeTests/Day00Tests.swift`: any unit tests that you want to include
+
+To start a new day's challenge, make a copy of these files, updating 00 to the 
+day number.
+
+```
+// Add each new day implementation to this array:
+let allProblems: [any AdventDay] = [
+    Day01(),
+    ...
+]
+```
+
+Then implement part 1 and 2. The `AdventOfCode.swift` file controls which challenge
+is run with `swift run`. Add your new type to its `allProblems` array. By default 
+it runs the most recent challenge.
+
+The `AdventOfCode.swift` file controls which day's challenge is run
+with `swift run`. By default that runs the most recent challenge in the package.
+
+To supply command line arguments use `swift run aoc-00`. For example,
+`swift run -c release aoc-00 --benchmark 3` builds the binary with full
+optimizations, and benchmarks the challenge for day 3.
+
+** License
+Licensed under the MIT License.
+
+** Solutions Implemented
+
+| Problem | Part 1 | Part 2 |
+|---------+--------+--------|
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+|         |        |        |
+
