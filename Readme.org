@@ -15,7 +15,7 @@ This is a template to create the initial project. Some things will need to be ch
 
 ** Project Structure
 
-This is a Swift Package based off the starter project [provided by Apple](https://github.com/apple/swift-aoc-starter-example/tree/main)
+This is a Swift Package based off the starter project [[https://github.com/apple/swift-aoc-starter-example/tree/main][provided by Apple]]
 
 This is split into Three main parts
 - aoc-00 the executable file which routes the command line to the solutions library
