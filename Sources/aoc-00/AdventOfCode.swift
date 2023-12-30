@@ -41,7 +41,7 @@ struct AdventOfCode: AsyncParsableCommand {
         var result: Result<T, Error>?
         let timing = await ContinuousClock().measure {
             do {
-                result = try .success(await part())
+                result = try await .success(part())
             } catch {
                 result = .failure(error)
             }
